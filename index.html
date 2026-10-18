@@ -1,16 +1,12 @@
-This is a complete HTML file for a professional, outdoorsy website titled "NH CUSTOMS" for custom Kinco mittens. It includes placeholder image boxes and a cool, modern aesthetic.
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NH CUSTOMS · Kinco Mittens</title>
-  <!-- Google Fonts for clean, rugged look -->
+  <title>NH CUSTOMS · Custom Kinco Mittens</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -19,11 +15,13 @@ This is a complete HTML file for a professional, outdoorsy website titled "NH CU
     }
 
     body {
-      background-color: #f5f2eb;
-      background-image: radial-gradient(circle at 10% 20%, rgba(200, 180, 140, 0.08) 0%, transparent 30%),
-                        radial-gradient(circle at 90% 80%, rgba(120, 140, 110, 0.08) 0%, transparent 40%);
-      font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      color: #1e2a2a;
+      background-color: #f2ede3;
+      background-image: 
+        radial-gradient(circle at 15% 25%, rgba(94, 123, 94, 0.06) 0%, transparent 35%),
+        radial-gradient(circle at 85% 75%, rgba(127, 107, 75, 0.07) 0%, transparent 40%),
+        repeating-linear-gradient(90deg, rgba(160, 145, 120, 0.03) 0px, rgba(160, 145, 120, 0.03) 1px, transparent 1px, transparent 40px);
+      font-family: 'Inter', system-ui, sans-serif;
+      color: #1e2a24;
       line-height: 1.5;
       -webkit-font-smoothing: antialiased;
     }
@@ -34,21 +32,21 @@ This is a complete HTML file for a professional, outdoorsy website titled "NH CU
       padding: 0 1.8rem;
     }
 
-    /* header / nav */
+    /* NAV */
     .navbar {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1.8rem 0 1.2rem;
-      border-bottom: 1px solid rgba(30, 42, 42, 0.12);
+      padding: 1.6rem 0 1.2rem;
+      border-bottom: 1px solid rgba(45, 66, 50, 0.18);
     }
 
     .logo {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: 1.9rem;
+      font-size: 1.7rem;
       font-weight: 700;
       letter-spacing: -0.02em;
-      color: #1e2a2a;
+      color: #1e2a24;
       text-decoration: none;
       display: flex;
       align-items: center;
@@ -56,28 +54,28 @@ This is a complete HTML file for a professional, outdoorsy website titled "NH CU
     }
 
     .logo span {
-      background: #2b4b3a;
-      color: #f5f2eb;
-      font-size: 0.85rem;
+      background: #3b5e3b;
+      color: #f2ede3;
+      font-size: 0.8rem;
       font-weight: 600;
-      padding: 0.2rem 0.6rem;
+      padding: 0.2rem 0.65rem;
       border-radius: 40px;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.05em;
       margin-left: 0.2rem;
     }
 
     .nav-links {
       display: flex;
-      gap: 2.5rem;
+      gap: 2.2rem;
       font-weight: 500;
-      font-size: 1rem;
-      letter-spacing: 0.02em;
+      font-size: 0.95rem;
+      align-items: center;
     }
 
     .nav-links a {
       text-decoration: none;
-      color: #1e2a2a;
-      transition: color 0.15s ease;
+      color: #1e2a24;
+      transition: color 0.15s;
     }
 
     .nav-links a:hover {
@@ -85,40 +83,37 @@ This is a complete HTML file for a professional, outdoorsy website titled "NH CU
     }
 
     .nav-cta {
-      background-color: #1e2a2a;
-      color: #f5f2eb !important;
-      padding: 0.6rem 1.4rem;
+      background-color: #2d4235;
+      color: #f2ede3 !important;
+      padding: 0.55rem 1.3rem;
       border-radius: 40px;
       font-weight: 600;
       font-size: 0.9rem;
+      transition: 0.2s;
     }
 
     .nav-cta:hover {
-      background-color: #2d4235;
-      color: #f5f2eb !important;
+      background-color: #1e2f24;
+      color: #f2ede3 !important;
     }
 
-    /* hero */
+    /* HERO */
     .hero {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 3rem;
       align-items: center;
-      padding: 3.5rem 0 2.5rem;
-    }
-
-    .hero-content {
-      max-width: 500px;
+      padding: 3.2rem 0 2rem;
     }
 
     .eyebrow {
       font-family: 'Space Grotesk', sans-serif;
       text-transform: uppercase;
-      letter-spacing: 0.1em;
-      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      font-size: 0.78rem;
       font-weight: 600;
       color: #7f6b4b;
-      margin-bottom: 1rem;
+      margin-bottom: 0.9rem;
       display: flex;
       align-items: center;
       gap: 0.5rem;
@@ -127,33 +122,32 @@ This is a complete HTML file for a professional, outdoorsy website titled "NH CU
     .eyebrow::before {
       content: '';
       display: inline-block;
-      width: 2rem;
+      width: 1.8rem;
       height: 2px;
       background: #7f6b4b;
     }
 
     h1 {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: 3.8rem;
+      font-size: 3.6rem;
       font-weight: 600;
-      line-height: 1.05;
+      line-height: 1.06;
       letter-spacing: -0.03em;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.2rem;
       color: #1a2620;
     }
 
     .hero-highlight {
-      color: #4f6b4f;
+      color: #3b5e3b;
       border-bottom: 3px solid #b8a88a;
       display: inline-block;
-      padding-bottom: 0.1rem;
+      padding-bottom: 0.08rem;
     }
 
     .hero-desc {
-      font-size: 1.15rem;
-      color: #2d3a30;
-      margin-bottom: 2.2rem;
-      font-weight: 400;
+      font-size: 1.1rem;
+      color: #3b4a3b;
+      margin-bottom: 2rem;
       max-width: 90%;
     }
 
@@ -165,113 +159,105 @@ This is a complete HTML file for a professional, outdoorsy website titled "NH CU
 
     .btn {
       display: inline-block;
-      padding: 0.9rem 2rem;
+      padding: 0.85rem 1.9rem;
       border-radius: 50px;
       font-weight: 600;
       font-size: 0.95rem;
       text-decoration: none;
-      transition: all 0.2s ease;
-      letter-spacing: 0.01em;
+      transition: 0.2s ease;
     }
 
     .btn-primary {
-      background: #2b4b3a;
-      color: #f5f2eb;
-      box-shadow: 0 4px 10px rgba(43, 75, 58, 0.2);
+      background: #2d4235;
+      color: #f2ede3;
+      box-shadow: 0 4px 10px rgba(45, 66, 53, 0.2);
     }
 
     .btn-primary:hover {
-      background: #1e3628;
-      box-shadow: 0 8px 16px rgba(43, 75, 58, 0.25);
+      background: #1e2f24;
       transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(45, 66, 53, 0.25);
     }
 
     .btn-outline {
-      border: 2px solid #1e2a2a;
-      color: #1e2a2a;
-      background: transparent;
+      border: 2px solid #2d4235;
+      color: #2d4235;
     }
 
     .btn-outline:hover {
-      background: #1e2a2a;
-      color: #f5f2eb;
+      background: #2d4235;
+      color: #f2ede3;
       transform: translateY(-2px);
     }
 
-    /* image placeholder (hero) */
-    .hero-image-placeholder {
-      background: #d9d2c0;
-      background-image: repeating-linear-gradient(45deg, #cfc6b2 0px, #cfc6b2 2px, #e3daca 2px, #e3daca 10px);
+    /* hero image — real image slot with placeholder fallback */
+    .hero-image {
       border-radius: 40px 40px 40px 0;
       aspect-ratio: 4 / 5;
       width: 100%;
+      box-shadow: 25px 25px 40px -18px rgba(30, 42, 36, 0.25);
+      overflow: hidden;
+      position: relative;
+      background: #d9d0be;
+      border: 2px dashed #a69b86;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      box-shadow: 25px 25px 40px -15px rgba(30, 42, 42, 0.2);
-      border: 2px dashed #a69b86;
-      color: #4a5b4a;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .hero-image .img-fallback {
       font-family: 'Space Grotesk', sans-serif;
-      font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 0.1em;
-      font-size: 0.9rem;
-      transition: 0.2s;
-      padding: 1rem;
+      font-size: 0.85rem;
+      color: #4a5b4a;
       text-align: center;
+      padding: 1rem;
     }
 
-    .hero-image-placeholder::before {
-      content: "🖼️";
-      font-size: 3.5rem;
-      opacity: 0.6;
-      margin-bottom: 0.8rem;
-    }
-
-    .hero-image-placeholder span {
-      background: rgba(255, 255, 255, 0.5);
-      padding: 0.3rem 1rem;
-      border-radius: 30px;
-      backdrop-filter: blur(2px);
-    }
-
-    /* section */
+    /* SECTION HEADERS */
     .section-header {
       text-align: center;
-      margin: 4rem 0 2.8rem;
+      margin: 3.5rem 0 2.2rem;
     }
 
     .section-header h2 {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: 2.5rem;
+      font-size: 2.3rem;
       font-weight: 600;
       letter-spacing: -0.02em;
       color: #1a2620;
-      margin-bottom: 0.6rem;
+      margin-bottom: 0.4rem;
     }
 
     .section-header p {
       color: #4f5e50;
-      font-size: 1.1rem;
-      max-width: 550px;
+      font-size: 1rem;
+      max-width: 500px;
       margin: 0 auto;
     }
 
-    /* cards grid */
+    /* CARDS */
     .grid-3 {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 2rem;
-      margin-bottom: 3.5rem;
+      margin-bottom: 3rem;
     }
 
     .card {
       background: #fefcf8;
       border-radius: 28px;
-      padding: 1.8rem 1.8rem 2.2rem;
-      box-shadow: 0 12px 30px -12px rgba(30, 42, 42, 0.1);
-      border: 1px solid #e5ddcd;
+      padding: 1.5rem 1.5rem 1.8rem;
+      box-shadow: 0 10px 26px -12px rgba(30, 42, 36, 0.1);
+      border: 1px solid #e2dacb;
       transition: 0.25s ease;
       display: flex;
       flex-direction: column;
@@ -279,7 +265,7 @@ This is a complete HTML file for a professional, outdoorsy website titled "NH CU
 
     .card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 24px 40px -16px rgba(43, 75, 58, 0.2);
+      box-shadow: 0 24px 40px -18px rgba(45, 66, 53, 0.22);
       border-color: #b8aa8f;
     }
 
@@ -288,7 +274,7 @@ This is a complete HTML file for a professional, outdoorsy website titled "NH CU
       background-image: repeating-linear-gradient(45deg, #cdc4b0 0px, #cdc4b0 2px, #e1d8c8 2px, #e1d8c8 10px);
       border-radius: 22px;
       aspect-ratio: 1 / 1;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.3rem;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -297,30 +283,36 @@ This is a complete HTML file for a professional, outdoorsy website titled "NH CU
       font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       border: 2px dashed #9b907b;
-      transition: 0.2s;
+      overflow: hidden;
+      position: relative;
     }
 
-    .card-image::before {
-      content: "📷";
-      font-size: 2.5rem;
-      opacity: 0.7;
-      margin-right: 0.3rem;
+    .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-image .img-fallback {
+      text-align: center;
+      padding: 0.5rem;
     }
 
     .card h3 {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       font-weight: 600;
       letter-spacing: -0.02em;
       color: #1a2620;
-      margin-bottom: 0.7rem;
+      margin-bottom: 0.4rem;
     }
 
     .card p {
       color: #4b5a4b;
-      font-size: 1rem;
+      font-size: 0.95rem;
       flex-grow: 1;
     }
 
@@ -330,100 +322,111 @@ This is a complete HTML file for a professional, outdoorsy website titled "NH CU
       color: #2f4435;
       font-weight: 600;
       font-size: 0.75rem;
-      padding: 0.25rem 0.9rem;
+      padding: 0.3rem 1rem;
       border-radius: 50px;
-      margin-top: 1.4rem;
+      margin-top: 1.2rem;
       align-self: flex-start;
       letter-spacing: 0.02em;
       text-transform: uppercase;
     }
 
-    /* feature split */
+    /* FEATURE SPLIT */
     .feature-split {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 3rem;
-      background: #eae6db;
+      background: #e7e1d3;
+      background-image: 
+        linear-gradient(135deg, rgba(94, 123, 94, 0.06) 0%, transparent 60%),
+        repeating-linear-gradient(0deg, rgba(120, 105, 80, 0.04) 0px, rgba(120, 105, 80, 0.04) 1px, transparent 1px, transparent 32px);
       border-radius: 48px;
       padding: 3rem;
-      margin: 3rem 0 4rem;
+      margin: 2.5rem 0 3.5rem;
       align-items: center;
     }
 
-    .feature-image-placeholder {
-      background: #d2cbbc;
-      background-image: repeating-linear-gradient(45deg, #c6beac 0px, #c6beac 2px, #dad2c2 2px, #dad2c2 12px);
+    .feature-image {
       border-radius: 32px;
       aspect-ratio: 1 / 1;
       width: 100%;
+      overflow: hidden;
+      border: 3px dashed #8b816d;
+      background: #d2cbbc;
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 3px dashed #8b816d;
-      color: #3d4e3d;
+      position: relative;
+    }
+
+    .feature-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .feature-image .img-fallback {
       font-family: 'Space Grotesk', sans-serif;
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.1em;
-      font-size: 1rem;
-    }
-
-    .feature-image-placeholder::before {
-      content: "🧤";
-      font-size: 4rem;
-      margin-right: 0.5rem;
-      opacity: 0.7;
+      font-size: 0.95rem;
+      color: #3d4e3d;
+      text-align: center;
+      padding: 1rem;
     }
 
     .feature-text h2 {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: 2.3rem;
+      font-size: 2.1rem;
       font-weight: 600;
       letter-spacing: -0.02em;
-      line-height: 1.2;
-      margin-bottom: 1.2rem;
+      line-height: 1.15;
+      margin-bottom: 0.9rem;
       color: #1a2620;
     }
 
     .feature-text p {
       color: #2f3e30;
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
+      font-size: 1.05rem;
+      margin-bottom: 1.6rem;
     }
 
     .feature-list {
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 0.8rem;
+      gap: 0.7rem;
     }
 
     .feature-list li {
       display: flex;
       align-items: center;
-      gap: 0.8rem;
+      gap: 0.7rem;
       font-weight: 500;
+      font-size: 0.95rem;
     }
 
     .feature-list li::before {
       content: "✓";
-      background: #2b4b3a;
-      color: #f5f2eb;
-      width: 1.5rem;
-      height: 1.5rem;
+      background: #2d4235;
+      color: #f2ede3;
+      width: 1.4rem;
+      height: 1.4rem;
       border-radius: 50%;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       font-weight: 700;
+      flex-shrink: 0;
     }
 
-    /* footer */
+    /* FOOTER */
     .footer {
-      border-top: 1px solid rgba(30, 42, 42, 0.15);
-      padding: 2.5rem 0 2rem;
-      margin-top: 4rem;
+      border-top: 1px solid rgba(45, 66, 53, 0.18);
+      padding: 2.2rem 0 1.8rem;
+      margin-top: 3rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -434,100 +437,64 @@ This is a complete HTML file for a professional, outdoorsy website titled "NH CU
     .footer-logo {
       font-family: 'Space Grotesk', sans-serif;
       font-weight: 700;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       letter-spacing: -0.02em;
-      color: #1e2a2a;
+      color: #1e2a24;
     }
 
     .footer-copy {
       color: #5e6b5e;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
     }
 
     .footer-links {
       display: flex;
-      gap: 2rem;
+      gap: 1.8rem;
       font-weight: 500;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
     }
 
     .footer-links a {
       text-decoration: none;
-      color: #1e2a2a;
+      color: #1e2a24;
     }
 
     .footer-links a:hover {
       color: #5e7b5e;
     }
 
-    /* responsiveness */
+    /* RESPONSIVE */
     @media (max-width: 1000px) {
-      h1 {
-        font-size: 3rem;
-      }
-      .hero {
-        gap: 2rem;
-      }
-      .grid-3 {
-        gap: 1.5rem;
-      }
+      h1 { font-size: 2.9rem; }
+      .hero { gap: 2rem; }
+      .grid-3 { gap: 1.5rem; }
     }
 
     @media (max-width: 850px) {
       .hero {
         grid-template-columns: 1fr;
-        text-align: left;
         padding-top: 2rem;
       }
-      .hero-image-placeholder {
-        max-width: 450px;
+      .hero-image {
+        max-width: 420px;
         margin: 0 auto;
         border-radius: 40px;
       }
-      .grid-3 {
-        grid-template-columns: 1fr 1fr;
-      }
-      .feature-split {
-        grid-template-columns: 1fr;
-        padding: 2rem;
-      }
-      .feature-image-placeholder {
-        max-width: 350px;
-        margin: 0 auto;
-      }
-      .navbar {
-        flex-wrap: wrap;
-        gap: 1rem;
-      }
-      .nav-links {
-        gap: 1.5rem;
-        font-size: 0.9rem;
-      }
+      .grid-3 { grid-template-columns: 1fr 1fr; }
+      .feature-split { grid-template-columns: 1fr; padding: 2rem; }
+      .feature-image { max-width: 340px; margin: 0 auto; }
+      .navbar { flex-wrap: wrap; gap: 1rem; }
+      .nav-links { gap: 1.4rem; font-size: 0.9rem; }
     }
 
     @media (max-width: 600px) {
-      .grid-3 {
-        grid-template-columns: 1fr;
-      }
-      h1 {
-        font-size: 2.5rem;
-      }
-      .section-header h2 {
-        font-size: 2rem;
-      }
-      .feature-text h2 {
-        font-size: 1.9rem;
-      }
-      .container {
-        padding: 0 1.2rem;
-      }
-      .nav-links a:not(.nav-cta) {
-        display: none;
-      }
-      .footer {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+      .grid-3 { grid-template-columns: 1fr; }
+      h1 { font-size: 2.4rem; }
+      .section-header h2 { font-size: 1.9rem; }
+      .feature-text h2 { font-size: 1.8rem; }
+      .container { padding: 0 1.2rem; }
+      .nav-links a:not(.nav-cta) { display: none; }
+      .footer { flex-direction: column; align-items: flex-start; }
     }
   </style>
 </head>
@@ -540,7 +507,7 @@ This is a complete HTML file for a professional, outdoorsy website titled "NH CU
         <a href="#">Mittens</a>
         <a href="#">Custom</a>
         <a href="#">About</a>
-        <a href="#" class="nav-cta">Order now</a>
+        <a href="#" class="nav-cta">Order</a>
       </div>
     </nav>
 
@@ -549,56 +516,73 @@ This is a complete HTML file for a professional, outdoorsy website titled "NH CU
       <div class="hero-content">
         <div class="eyebrow">New Hampshire · Handcrafted</div>
         <h1>Custom <span class="hero-highlight">Kinco</span> mittens built for the wild.</h1>
-        <p class="hero-desc">
-          From the White Mountains to your backyard — we make rugged, personalized mittens that keep your hands warm and your spirit outside. Choose your leather, lining, and stitch.
-        </p>
+        <p class="hero-desc">Rugged. Warm. Yours. Made by hand in the White Mountains.</p>
         <div class="btn-group">
           <a href="#" class="btn btn-primary">Design yours</a>
           <a href="#" class="btn btn-outline">See gallery</a>
         </div>
       </div>
-      <div class="hero-image-placeholder">
-        <span>Kinco mitten hero image</span>
+
+      <!-- Hero image (real image for first product hero) -->
+      <div class="hero-image">
+        <img src="IMG_6074.jpeg" alt="Custom Kinco mittens" loading="lazy" 
+             onerror="this.style.display='none'; this.parentElement.querySelector('.img-fallback').style.display='block';">
+        <div class="img-fallback" style="display: none;">📷 hero mitten image</div>
       </div>
     </section>
 
-    <!-- Collection / cards -->
+    <!-- Products -->
     <div class="section-header">
       <h2>Three ways to stay warm</h2>
-      <p>Each pair starts with a premium Kinco base and becomes one-of-a-kind.</p>
+      <p>Premium Kinco bases, personalized to you.</p>
     </div>
 
     <div class="grid-3">
+      <!-- product 1 — $85 with two images (we show first image; swap or add gallery later) -->
       <div class="card">
-        <div class="card-image">image</div>
+        <div class="card-image">
+          <img src="IMG_6074.jpeg" alt="Classic Kinco mitten" loading="lazy"
+               onerror="this.style.display='none'; this.parentElement.querySelector('.img-fallback').style.display='block';">
+          <div class="img-fallback" style="display: none;">📷 IMG_6074</div>
+        </div>
         <h3>The Classic</h3>
-        <p>Full-grain leather, wool lining, and a custom cuff. The original NH feel — built to last seasons.</p>
-        <div class="card-tag">From $89</div>
+        <p>Full-grain leather, wool lining. Built to last.</p>
+        <div class="card-tag">From $85</div>
       </div>
+
+      <!-- product 2 -->
       <div class="card">
-        <div class="card-image">image</div>
+        <div class="card-image">
+          <div class="img-fallback">📷 expedition image</div>
+        </div>
         <h3>The Expedition</h3>
-        <p>Extra insulation, reinforced palm, and longer gauntlet. For deep winter and serious adventure.</p>
+        <p>Extra insulation, reinforced palm, longer cuff.</p>
         <div class="card-tag">From $119</div>
       </div>
+
+      <!-- product 3 -->
       <div class="card">
-        <div class="card-image">image</div>
+        <div class="card-image">
+          <div class="img-fallback">📷 custom image</div>
+        </div>
         <h3>The Custom</h3>
-        <p>Your leather, your lining, your embroidery. Add a personal touch or a company logo.</p>
+        <p>Your leather, lining, and monogram.</p>
         <div class="card-tag">From $149</div>
       </div>
     </div>
 
-    <!-- feature split -->
+    <!-- Feature split — second image of first product can go here as a detail shot -->
     <div class="feature-split">
-      <div class="feature-image-placeholder">
-        <span>detail shot</span>
+      <div class="feature-image">
+        <img src="IMG_6075.jpeg" alt="Kinco mitten detail" loading="lazy"
+             onerror="this.style.display='none'; this.parentElement.querySelector('.img-fallback').style.display='block';">
+        <div class="img-fallback" style="display: none;">📷 IMG_6075 · detail</div>
       </div>
       <div class="feature-text">
         <h2>Built on Kinco. Made personal.</h2>
-        <p>We take the legendary durability of Kinco mittens and elevate them with hand-finished details, premium materials, and custom touches you won't find anywhere else.</p>
+        <p>Legendary durability, elevated with hand-finished details.</p>
         <ul class="feature-list">
-          <li>Premium deerskin & bison leather options</li>
+          <li>Premium deerskin & bison leather</li>
           <li>Hand-stitched custom cuffs</li>
           <li>Merino wool or fleece lining</li>
           <li>Optional monogram or logo</li>
@@ -606,30 +590,26 @@ This is a complete HTML file for a professional, outdoorsy website titled "NH CU
       </div>
     </div>
 
-    <!-- another placeholder row — extra visual interest -->
-    <div class="section-header">
-      <h2>From the workshop</h2>
-      <p>Every pair is cut, stitched, and finished in our New Hampshire shop.</p>
-    </div>
+    <!-- Extra visual row (keeping it minimal) -->
     <div class="grid-3" style="margin-bottom: 2rem;">
       <div class="card">
-        <div class="card-image">image</div>
+        <div class="card-image"><div class="img-fallback">📷 workshop</div></div>
         <h3>Leather selection</h3>
-        <p>We source full-grain hides from North American tannages. Choose your color and grain.</p>
+        <p>Full-grain hides, sourced in North America.</p>
       </div>
       <div class="card">
-        <div class="card-image">image</div>
+        <div class="card-image"><div class="img-fallback">📷 stitching</div></div>
         <h3>Hand-stitched</h3>
-        <p>Each seam is sewn with care. Custom thread colors available for a personal accent.</p>
+        <p>Custom thread colors for a personal accent.</p>
       </div>
       <div class="card">
-        <div class="card-image">image</div>
+        <div class="card-image"><div class="img-fallback">📷 finishing</div></div>
         <h3>Finishing touches</h3>
-        <p>Burnished edges, optional cuff embossing, and a weather-resistant wax finish.</p>
+        <p>Burnished edges and weather-resistant wax.</p>
       </div>
     </div>
 
-    <!-- footer -->
+    <!-- Footer -->
     <footer class="footer">
       <div class="footer-logo">NH CUSTOMS</div>
       <div class="footer-copy">© 2025 — Built for the outdoors</div>
@@ -640,6 +620,16 @@ This is a complete HTML file for a professional, outdoorsy website titled "NH CU
       </div>
     </footer>
   </div>
+
+  <!-- Tiny script: if images fail, show fallback text (already handled inline, but double-safety) -->
+  <script>
+    document.querySelectorAll('.card-image img, .hero-image img, .feature-image img').forEach(img => {
+      img.addEventListener('error', function() {
+        this.style.display = 'none';
+        const fallback = this.parentElement.querySelector('.img-fallback');
+        if (fallback) fallback.style.display = 'block';
+      });
+    });
+  </script>
 </body>
 </html>
-```
